@@ -103,7 +103,7 @@ module ofm_read_addr_controller #(
                 HOLD: begin  
                     ofm_addr      <= ofm_addr                                                                                                                                 ;
                     read_en       <= 1                                                                                                                                        ;    
-                    read_ofm_size <= ((start_window_addr % ifm_size) + SYSTOLIC_SIZE + kernel_size - 1 > ifm_size) ? (ifm_size - base_addr - kernel_size + 1) : SYSTOLIC_SIZE ;      
+                    read_ofm_size <= ((start_window_addr_rst % ifm_size) + SYSTOLIC_SIZE + kernel_size - 1 > ifm_size) ? (ifm_size - base_addr_rst - kernel_size + 1) : SYSTOLIC_SIZE ;      
                 end
                 NEXT_PIXEL: begin
                     ofm_addr               <= ofm_addr + 1               ;

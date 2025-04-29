@@ -52,7 +52,7 @@ module main_controller #(
     always @(count_layer) begin
         case (count_layer)
             4'd1: begin
-                ifm_size         = 9'd126      ; //416
+                ifm_size         = 9'd414      ; //416
                 ifm_channel      = 11'd3       ;
                 kernel_size      = 2'd3        ;
                 num_filter       = 11'd16      ;
@@ -63,103 +63,103 @@ module main_controller #(
                 start_read_addr  = 22'd0       ;
             end 
             4'd2: begin
-                ifm_size         = 9'd62       ; //208
+                ifm_size         = 9'd206       ; //208
                 ifm_channel      = 11'd16      ;
                 kernel_size      = 2'd3        ;
                 num_filter       = 11'd32      ;
                 maxpool_mode     = 1           ;
                 maxpool_stride   = 2'd2        ;
                 upsample_mode    = 0           ;
-                start_write_addr = 22'd61504   ; //692224
+                start_write_addr = 22'd678976   ; //692224
                 start_read_addr  = 22'd0       ;
             end 
             4'd3: begin
-                ifm_size         = 9'd30       ;
+                ifm_size         = 9'd102       ;
                 ifm_channel      = 11'd32      ;
                 kernel_size      = 2'd3        ;
-                num_filter       = 11'd64      ;
+                num_filter       = 11'd64     ;
                 maxpool_mode     = 1           ;
                 maxpool_stride   = 2'd2        ;
                 upsample_mode    = 0           ;
-                start_write_addr = 22'd90304   ;
-                start_read_addr  = 22'd61504   ;
+                start_write_addr = 22'd1011904   ;
+                start_read_addr  = 22'd678976   ;
             end 
             4'd4: begin
-                ifm_size         = 9'd14       ;
+                ifm_size         = 9'd50       ;
                 ifm_channel      = 11'd64      ;
                 kernel_size      = 2'd3        ;
                 num_filter       = 11'd128     ;
                 maxpool_mode     = 1           ;
                 maxpool_stride   = 2'd2        ;
                 upsample_mode    = 0           ;
-                start_write_addr = 22'd102848  ;
-                start_read_addr  = 22'd90304   ;
+                start_write_addr = 22'd1171904  ;
+                start_read_addr  = 22'd1011904   ;
             end 
             4'd5: begin
-                ifm_size         = 9'd6        ;
+                ifm_size         = 9'd24        ;
                 ifm_channel      = 11'd128     ;
                 kernel_size      = 2'd3        ;
                 num_filter       = 11'd256     ;
                 maxpool_mode     = 1           ;
                 maxpool_stride   = 2'd2        ;
                 upsample_mode    = 0           ;
-                start_write_addr = 22'd107456  ;
-                start_read_addr  = 22'd102848  ;
+                start_write_addr = 22'd1245632  ;
+                start_read_addr  = 22'd1171904  ;
             end 
             4'd6: begin
-                ifm_size         = 9'd13       ;
+                ifm_size         = 9'd11       ;
                 ifm_channel      = 11'd256     ;
                 kernel_size      = 2'd3        ;
                 num_filter       = 11'd512     ;
                 maxpool_mode     = 1           ;
                 maxpool_stride   = 2'd1        ;
                 upsample_mode    = 0           ;
-                start_write_addr = 22'd1341184 ;
-                start_read_addr  = 22'd1297920 ;                
+                start_write_addr = 22'd1276608 ;
+                start_read_addr  = 22'd1245632 ;                
             end 
             4'd7: begin
-                ifm_size         = 9'd13       ;
+                ifm_size         = 9'd9       ;
                 ifm_channel      = 11'd512     ;
                 kernel_size      = 2'd3        ;
                 num_filter       = 11'd1024    ;
                 maxpool_mode     = 0           ;
                 maxpool_stride   = 2'd0        ;
                 upsample_mode    = 0           ;
-                start_write_addr = 22'd1427712 ;
-                start_read_addr  = 22'd1341184 ;                
+                start_write_addr = 22'd1318080 ;
+                start_read_addr  = 22'd1276608 ;                
             end 
             4'd8: begin
-                ifm_size         = 9'd13       ;
+                ifm_size         = 9'd7       ;
                 ifm_channel      = 11'd1024    ;
                 kernel_size      = 2'd1        ;
                 num_filter       = 11'd256     ;
                 maxpool_mode     = 0           ;
                 maxpool_stride   = 2'd0        ;
                 upsample_mode    = 0           ;
-                start_write_addr = 22'd1600768 ;
-                start_read_addr  = 22'd1427712 ;                
+                start_write_addr = 22'd1368256 ;
+                start_read_addr  = 22'd1318080 ;                
             end 
             4'd9: begin
-                ifm_size         = 9'd13       ;
+                ifm_size         = 9'd7       ;
                 ifm_channel      = 11'd256     ;
                 kernel_size      = 2'd3        ;
                 num_filter       = 11'd512     ;
                 maxpool_mode     = 0           ;
                 maxpool_stride   = 2'd0        ;
                 upsample_mode    = 0           ;
-                start_write_addr = 22'd1644032 ;
-                start_read_addr  = 22'd1600768 ;                
+                start_write_addr = 22'd1380800 ;
+                start_read_addr  = 22'd1368256 ;                
             end 
             4'd10: begin
-                ifm_size         = 9'd13       ;
+                ifm_size         = 9'd5       ;
                 ifm_channel      = 11'd512     ;
                 kernel_size      = 2'd1        ;
                 num_filter       = 11'd255     ;
                 maxpool_mode     = 0           ;
                 maxpool_stride   = 2'd0        ;
                 upsample_mode    = 0           ;
-                start_write_addr = 22'd1730560 ;
-                start_read_addr  = 22'd1644032 ;                
+                start_write_addr = 22'd1393600 ;
+                start_read_addr  = 22'd1380800 ;                
             end 
             4'd11: begin
                 ifm_size         = 9'd13       ;
